@@ -1,0 +1,87 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Jura', sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666666;
+}
+
+/* ########## PARALLAX IMAGES ########## */
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* scroll = normal */
+}
+
+.pimg1 {
+  background-image: url('../images/image1.jpg');
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url('../images/image2.jpg');
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url('../images/image3.jpg');
+  min-height: 400px;
+}
+
+/* ########## SECTIONS ########## */
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #2d343b;
+}
+
+.section-dark {
+  background-color: #2d343b;
+  color: #dddddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: rgba(17, 17, 17, 0.7);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* ########## MOBILE ########## */
+
+@media(max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+
+  .ptext .border {
+    font-size: 12px;
+  }
+}
